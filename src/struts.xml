@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<constant name="struts.devMode" value="false" />
+	<constant name="struts.custom.i18n.resources" value="globalMessages" />
+	
+	<package name="billboard" namespace="/billboard" extends="struts-default">
+
+	    <action name="addBillboard"   class="com.billboard.controller.BillboardAction"  method="add">
+	        <result name="success">/billboard/listAllBillboard.jsp</result>
+            <result name="input">/billboard/addBillboard.jsp</result>
+		</action>
+		
+		<action name="getOne_For_UpdateBillboard"   class="com.billboard.controller.BillidAction"  method="getOne_For_Update">
+	        <result name="success">/billboard/updateBillboard.jsp</result>
+            <result name="input">/billboard/listAllBillboard.jsp</result>
+		</action>
+		
+		<action name="updateBillboard"   class="com.billboard.controller.BillboardAction"  method="update">
+	        <result name="success">/billboard/listAllBillboard.jsp</result>
+            <result name="input">/billboard/updateBillboard.jsp</result>
+		</action>
+		
+		<action name="deleteBillboard"   class="com.billboard.controller.BillidAction"  method="delete">
+	        <result name="success">/billboard/listAllBillboard.jsp</result>
+            <result name="input">/billboard/listAllBillboard.jsp</result>
+		</action>
+				
+		<action name="getOne_For_DisplayBillboard"   class="com.billboard.controller.BillidAction"  method="getOne_For_Display">
+	        <result name="success">/billboard/listOneBillboard.jsp</result>
+            <result name="input">/select_page.jsp</result>
+		</action>
+		
+		<action name="ckeditorUpload" class="com.billboard.controller.UploadFile"></action>
+			
+	</package>
+	
+
+
+</struts>

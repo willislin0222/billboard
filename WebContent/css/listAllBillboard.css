@@ -1,0 +1,32 @@
+.col1{
+	width:500px;
+	text-align:left;
+}
+.col2{
+	width:200px;
+	text-align:center;
+}
+.col3{
+	width:200px;
+	text-align:center;
+}
+.col4{
+	width:100px;
+	font-align:center;
+}
+.col5{
+	width:100px;
+	font-align:center;
+}
+.button{
+	text-align: center;
+	width:1125px;
+}
+.submitbtn{
+	background-color: #f00;
+}
+.backlist{
+	margin-left:90px;
+	text-align:center;
+	width:51%;
+}
